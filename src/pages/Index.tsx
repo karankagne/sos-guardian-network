@@ -1,5 +1,6 @@
+
 import React, { useState } from 'react';
-import { Megaphone, Users, Footprints, Tool } from 'lucide-react';
+import { Megaphone, Users, Footprints, Wrench } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from '@/lib/toast';
 
@@ -102,7 +103,7 @@ const Index = () => {
                 />
                 
                 <ToolsButton 
-                  icon={Tool} 
+                  icon={Wrench} 
                   label="More Tools" 
                   description="Access additional safety features"
                   onClick={handleMoreTools} 
