@@ -5,7 +5,7 @@ import { LucideIcon } from 'lucide-react';
 interface SOSButtonProps {
   icon: LucideIcon;
   secondaryIcon?: LucideIcon;
-  label: string;
+  label?: string;
   onClick: () => void;
   size?: 'lg' | 'md';
   type?: 'primary' | 'secondary';
@@ -45,7 +45,7 @@ const SOSButton = ({
         {SecondaryIcon && <SecondaryIcon className="w-8 h-8 ml-1" />}
       </div>
       
-      <span className="mt-2 font-medium text-shadow">{label}</span>
+      {label && <span className="mt-2 font-medium text-shadow">{label}</span>}
       
       <div className="absolute -bottom-10 left-0 right-0 h-14 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 group-hover:-bottom-7 transition-all duration-300" />
     </button>

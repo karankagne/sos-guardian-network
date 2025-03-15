@@ -63,14 +63,12 @@ const Index = () => {
               
               <div className="flex justify-center gap-8">
                 <SOSButton 
-                  icon={Megaphone} 
-                  label="SOS for Me" 
+                  icon={Megaphone}
                   onClick={handleSOSForMe} 
                 />
                 
                 <SOSButton 
-                  icon={Users} 
-                  label="SOS for Someone Else" 
+                  icon={Users}
                   onClick={handleSOSForSomeoneElse} 
                 />
               </div>
