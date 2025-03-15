@@ -1,8 +1,7 @@
-
 import React, { useState } from 'react';
-import { Megaphone, Users, Footprints, Toolbox } from 'lucide-react';
+import { Megaphone, Users, Footprints, Tool } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import { toast } from '@/components/ui/sonner';
+import { toast } from '@/lib/toast';
 
 import TopBar from '@/components/layout/TopBar';
 import BottomBar from '@/components/layout/BottomBar';
@@ -103,7 +102,7 @@ const Index = () => {
                 />
                 
                 <ToolsButton 
-                  icon={Toolbox} 
+                  icon={Tool} 
                   label="More Tools" 
                   description="Access additional safety features"
                   onClick={handleMoreTools} 

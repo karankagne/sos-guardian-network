@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { ArrowLeft, UserCheck } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { toast } from '@/components/ui/sonner';
+import { toast } from '@/lib/toast';
 
 import TopBar from '@/components/layout/TopBar';
 import BottomBar from '@/components/layout/BottomBar';
